@@ -5,13 +5,14 @@ using Xamarin.Forms.Xaml;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace FastP
 {
+    using Views;
     public partial class App : Application
     {
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+                           //Por donde iniciara el proyecto
+            MainPage = new InicioPage();
         }
 
         protected override void OnStart()
